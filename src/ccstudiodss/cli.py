@@ -34,6 +34,7 @@ def create_project_name_option(project_name):
 
     return click.option(
         '--project-name',
+        default=project_name,
         type=str,
         envvar=variable_name,
         help=(
